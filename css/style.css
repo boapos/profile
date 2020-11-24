@@ -41,6 +41,7 @@ h1 {
 
 p, ul {
     line-height: 1.5;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .showcase {
@@ -252,6 +253,7 @@ hr {
     .main-name {
         text-align: center;
         font-size: 5.5rem;
+        right: 8px;
     }
 
     .schools {
@@ -313,4 +315,7 @@ hr {
         padding-left: 0;
     }
 
+    .navbar .menu li {
+        padding-left: 0px;
+    }
 }
