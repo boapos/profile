@@ -1,0 +1,316 @@
+:root {
+    /* hotline miami */
+    --cyan: #0FEBE3;
+    --pink: #F43086;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#111;
+    color: var(--pink);
+    font-size: 1.1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 2.3rem;
+    color: var(--cyan);
+    padding: 10px 0 20px 0;
+    text-shadow: 4px 4px 10px #000;
+}
+
+h1 {
+    font-family: 'Sedgwick Ave', cursive;
+    color: var(--cyan);
+}
+
+p, ul {
+    line-height: 1.5;
+}
+
+.showcase {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px 20px 30px;
+    text-shadow: 1px 1px #000;
+    /* background-color: white; */
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu li {
+    color: var(--pink);
+    padding-left: 20px;
+}
+
+.coconut {
+    position: absolute;
+    z-index: -1;
+    height: 800px;
+    right: 700px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 100vh;
+}
+
+.main-name {
+    font-size: 7rem;
+    position: relative;
+    bottom: 100px;
+    text-shadow: 
+    6px 6px #111,   
+    10px 10px var(--pink);
+    transform: rotate(-5deg);
+}
+
+#dp {
+    border-radius: 50%;
+    width: 500px;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 
+    0 0 0 10px #333,
+    0 0 0 20px #222;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 70px;
+}
+
+.main-left {
+    position: relative;
+    right: 40px;
+}
+
+.buttons h3 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    padding: 20px;
+    color: #F43086;
+    border-radius: 5%;
+    border: solid 2px var(--cyan);
+}
+
+.buttons h3:hover {
+    /* font-size: 80px; */
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.menu a:hover {
+    /* font-size: 80px; */
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.schools {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schools img {
+    height: 220px;
+}
+  
+@-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.code-pic {
+    display: block;
+    max-width: 350px;
+    max-height: 268px;
+    height: auto;
+    width: auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content  p {
+    text-align: justify;
+    margin-right: 40px;
+}
+
+.intro {
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+hr {
+    border-style: solid;
+    border-color: #222222;
+    margin: 10px;
+}
+
+.hobbies ul, .work ul {
+    border-left: 6px solid var(--cyan);
+    padding: 0px 21px;
+}   
+
+ .contact {
+    display: flex;
+ }
+
+.links {
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.links li {
+    font-size: 1.8rem;
+    padding: 0 0 0 20px;
+}
+
+.container {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #181818;
+    max-width: 1200px;
+    box-shadow: 4px 4px 10px 1px #070707;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-name {
+        text-align: right;
+        transform: rotate(0deg);
+        /* right: 20px; */
+    }
+    
+    .coconut {
+        display: none;
+    }
+    
+    #dp {
+        width: 400px;
+    }
+
+    .surname {
+        display: block;
+    }
+
+    .buttons h3{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main-name {
+        text-align: center;
+        font-size: 5.5rem;
+    }
+
+    .schools {
+        flex-direction: column;
+    }
+
+    .navbar h1 {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .main-left {
+        position: initial;
+    }
+
+    .main-left .buttons h3 {
+        margin: 4px;
+    }
+
+    #dp {
+        width: 250px;
+        bottom: 30px;
+    }
+
+    .code-pic {
+        width: 250px;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .about-content p {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .links li:first-child {
+        padding-left: 0;
+    }
+
+}
