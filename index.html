@@ -3,117 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Bruce Apos</title>
+    <title>Bruce Apos | Profile</title>
 </head>
 <body>
-    <div class="showcase" id="showcase">
-        <header>
-            <nav class="navbar">
-                <h1>Bruce</h1>
-                <ul class="menu">
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work">Experience</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </nav>
-            <section class="main">
-                <!-- <img class="coconut" src="images/coconut.png"> -->
-                <div class="main-left">
-                    <h1 class="main-name">Bruce <span class="surname"></span>Apos</span></h1>
-                    <div class="buttons">
-                        <a href="#"><h3>projects <i class="fa fa-github"></i></h3></a>
-                        <a href="#"><h3>resume</h3></a>
-                    </div>
-                </div>
-                <img id="dp" src="images/dp.jpg">
-            </section>
-        </header>
+    <div class="theme-switch-wrapper">
+        <em id="dm">Dark Mode!</em>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
     </div>
-    <!-- about -->
+    <div class="border"></div>
+
+    <div class="nav-toggle">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav id="nav" class="nav">
+        <ul>
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="showcase">
+        <h1 id="main-name">Bruce Apos</h1>
+    </header>
     <section id="about">
-        <div class="container about-content">
-            <div>
-                <h3>About me</h3>
-                <p>
-                    <span class="intro">Hi, I'm Bruce!</span> I'm a fresh grad from UPLB with a degree in BSEE with Computer Eng'g as my major. While my degree is Electrical Engineering, I've always enjoyed electronics, computers, and a little bit of programming (hence the CoE major). After graduating, I've tinkered more on digital electronics, web development, and programming while looking for jobs. Soon after, I got the opportunity to be a part of White Cloak's training program and it has been great so far. I look forward to learning a lot in White Cloak and hopefully contribute to real projects soon.
-                </p>
-            </div>
-            <img class="code-pic" src="images/code.png" alt="">
+        <div class="container">
+            <img class="dp" src="images/dp.jpg">
+            <h2>Hello, I'm Bruce 👋</h2>
+            <p class="intro">I'm a fresh grad from UPLB with a degree in BSEE with Computer Eng'g as my major. I'm a Software Engineer Trainee at White Cloak. I enjoy tinkering on computers and electronics.</p>
         </div>
     </section>
-    <!-- education -->
+    <hr>
     <section id="education">
         <div class="container">
-            <h3>Educational Background</h3>
+            <h2>Educational Background</h2>
             <ul class="schools">
-                <li><img src="images/uplb.png"><p>Tertiary: UP Los Baños</p></li>
-                <hr>
-                <li><img src="images/pshs.png"><p>Secondary: PSHS-CMC</p></li>
-                <hr>
-                <li><img src="images/LSA.png"><p>Primary: La Salle Academy</p></li>
+                <li><img src="images/uplb.png"><h3>UP Los Baños</h3><p>Tertiary</p></li>
+                <li><img src="images/pshs.png"><h3>PSHS-CMC</h3><p>Secondary</p></li>
+                <li><img src="images/LSA.png"><h3>La Salle Academy</h3><p>Primary</p></li>
             </ul>
         </div>
     </section>
-    <!-- work -->
-    <section class="work" id="work">
+    <hr>
+    <section id="experience">
         <div class="container">
-            <h3>Work Experiences</h3>
-            <ul>
-                <li>Intern, Summer Science Internship Program at the Information Systems & Technology Division, NPC MinGen (2013)</li>
-                <li>Retailer, Sirkito (2018 - 2020)</li>
-            </ul>
-        </div>
-    </section>
-    <!-- likes and hobbies -->
-    <section class="hobbies" id="hobbies">
-        <div class="container">
-            <h3>Likes and hobbies</h3>
-            <ul>
-                <li>Sports</li>
+            <h2>Experiences</h2>
+            <div class="exp-list">
+                <h3>Work</h3>
                 <ul>
-                    <li>Badminton</li>
-                    <li>Billiards</li>
-                    <li>Biking</li>
-                    <li>Chess <strong>(newbie)</strong></li>
+                    <li><span class="job">Intern</span>, Summer Science Internship Program at the Information Systems & Technology Division, NPC MinGen (2013)</li>
+                <li><span class="job">Retailer</span>, Sirkito (2018-2020)</li>
                 </ul>
-                <li>Video games</li>
+                <h3>Extracurricular</h3>
                 <ul>
-                    <li>Dota 1 & 2</li>
-                    <li>LoL & Wild Rift</li>
-                    <li>DOOM</li>
-                    <li>Racing sims</li>
-                </ul>
-                <li>Mechanical keyboards</li>
-                <li>Bass</li>
-                <li>Audio gears and stuff</li>
-                <li>Hydroponics</li>
-                <li>Driving around <em>aimlessly</em></li>
-            </ul>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="container">
-            <div class="contact">
-                <h3>Contact</h3>
-                <ul class="links">
-                    <li><a href="mailto:bruce.apos@whitecloak.com"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://www.facebook.com/bobapos/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/bruce-oliver-apos-51b3381b3/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-instagram"></i></li>
+                    <li><span class="job">External Affairs Committee Head</span>, UP Mindanawans (2015-2016)</li>
+                    <li><span class="job">Student Ambassador</span>, VR Philippines (2016-2017)</li>
+                    <li><span class="job">Co-founder & Education Committee Head</span>, VISIV (2017-2019)</li>
+                    <li><span class="job">Member</span>, UPLB Badminton Varsity (2014-2020)</li>
+                    <li><span class="job">Member</span>, UP Engineering Radio Guild - Los Baños (2020)</li>
                 </ul>
             </div>
-            <a href="#showcase">Back to Top</a>
         </div>
+    </section>
+    <hr>
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <ul class="hobby-pics">
+                <li><img src="images/blrds.png"></li>
+                <li><img src="images/elec.png"></li>
+                <li><img class="doom" src="images/doom.gif"></li>
+            </ul>
+            <ul class="hobby-list">
+                <li>Badminton</li>
+                <li>Billiards</li>
+                <li>Biking</li>
+                <li>Video games: MOBA, DOOM, racing sims</li>
+                <li>Electronics</li>
+                <li>Audio gears and stuff</li>
+                <li>Bass</li>
+                <li>Hydroponics</li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section id="recommendations">
+        <div class="container recommendations">
+            <h2>Recommendations</h2>
+            <div id="form-main">
+                <div id="form-div">
+                  <form class="form" id="post-form">
+              
+                    <p class="name">
+                      <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+                    </p>
+              
+                    <p class="email">
+                      <input name="email" type="text" class="feedback-input" id="position" placeholder="Position" />
+                    </p>
+              
+                    <p class="text">
+                      <textarea name="text" class="feedback-input" id="text" placeholder="Add a recommendation"></textarea>
+                    </p>
+              
+                    <div class="submit">
+                      <input type="submit" value="Post" class="post-btn" />
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <div id="post-list">  
+        </div>
+    </section>
+    <footer id="footer" class="footer container">
+        <p>Find me on:</p>
+        <ul class="socmed">
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+        <p>&#169 2020 Bruce Apos</p>
         
     </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
