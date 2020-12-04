@@ -29,6 +29,8 @@ class UI {
     }
 
     static addPostToList(post) {
+        let currDate = new Date().toLocaleString();
+
         const list = document.querySelector('#post-list');
         const article = document.createElement('article');
         article.innerHTML = `
@@ -39,6 +41,7 @@ class UI {
             <i class="edit-btn fa fa-pencil-square-o" title="Edit"></i>
             <i class="delete-btn fa fa-times-circle" title="Delete"></i>
         </section>
+        <p class="date">${currDate}</p>
         `;
 
         list.appendChild(article);
