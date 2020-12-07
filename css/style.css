@@ -24,7 +24,6 @@ li {
 
 .dark-theme h1,
 .dark-theme h2 {
-  color: #7d5fff;
   text-shadow: 1px 1px 1px #000;
 }
 .dark-theme footer {
@@ -34,7 +33,7 @@ li {
 .dark-theme .nav-toggle .nav-toggle-bar,
 .dark-theme .nav-toggle .nav-toggle-bar::after,
 .dark-theme .nav-toggle .nav-toggle-bar::before {
-  background-color: #7d5fff;
+  background-color: #eee;
 }
 
 .dark-theme hr {
@@ -53,17 +52,12 @@ li {
 .dark-theme #form-div {
   background-color: #333;
   padding: 25px;
-  max-width: 600px;
   margin: 30px auto;
   border-radius: 10px;
 }
 
 .dark-theme #post-list article {
-  position: relative;
-  padding: 20px 20px;
   background-color: #222;
-  border-radius: 10px;
-  margin: 0 10px 20px 10px;
 }
 
 .dark-theme .feedback-input {
@@ -80,6 +74,34 @@ li {
 .dark-theme .post-btn:hover {
   background-color: #eee;
   color: #444;
+}
+
+.dark-theme input[type="text"]:disabled {
+  background-color: #444;
+}
+.dark-theme textarea:disabled {
+  background-color: #444;
+}
+.dark-theme #post:disabled {
+  background-color: #444;
+  color: #777;
+  border-color: #444;
+}
+
+.dark-theme #save {
+  background-color: #eee;
+  border: 1px solid #eee;
+  cursor: pointer;
+  color: #444;
+  margin-right: 10px;
+}
+.dark-theme #save:hover {
+  background-color: inherit;
+  color: #eee;
+}
+.dark-theme #discard:hover {
+  color: #666;
+  border-color: #666;
 }
 
 /* default */
@@ -223,7 +245,7 @@ hr {
 #post-list article {
   margin-bottom: 20px;
   position: relative;
-  padding: 20px 20px;
+  padding: 20px 20px 35px 20px;
   background-color: #f3f3f3;
   border-radius: 10px;
   margin: 0 10px 20px 10px;
@@ -234,28 +256,33 @@ hr {
   padding: 0;
 }
 article p:nth-child(3) {
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
 }
-#post-list em {
-  font-size: 0.9rem;
-}
+
 #post-list .mod {
   font-size: 1.1rem;
   position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #555;
+  top: 5px;
+  right: 8px;
+  color: grey;
 }
 
-#post-list .mod .edit-btn:hover {
-  cursor: pointer;
-}
-
+#post-list .mod .edit-btn:hover,
 #post-list .mod .delete-btn:hover {
   cursor: pointer;
+  color: #222;
 }
+
+.dark-theme #post-list .mod .edit-btn:hover,
+.dark-theme #post-list .mod .delete-btn:hover {
+  color: #eee;
+}
+
 #post-list .mod .delete-btn {
   margin-left: 7px;
+}
+.key {
+  display: none;
 }
 #post-list hr {
   border: solid #ccc 1px;
@@ -268,10 +295,11 @@ article p:nth-child(3) {
 }
 
 #post-list .date {
-  text-align: right;
+  position: absolute;
   font-size: 0.7rem;
-  margin-top: 7px;
   opacity: 0.6;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* navbar style */
@@ -281,7 +309,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* nav toggle */
@@ -349,12 +377,12 @@ a:hover {
   font-size: 1.4rem;
   line-height: 1.7;
   height: 100vh;
-  left: -13rem;
+  left: -18rem;
   padding: 6rem 2rem 2rem 2rem;
   position: fixed;
   top: 0;
   transition: left 0.5s;
-  width: 13rem;
+  width: 18rem;
   z-index: 1;
 }
 .nav.expanded {
@@ -480,7 +508,7 @@ input:checked + .slider:before {
 }
 
 #form-div p {
-  padding: 0 10px;
+  padding: 0;
 }
 
 #form-main {
@@ -511,6 +539,32 @@ textarea {
   border: 3px solid rgba(0, 0, 0, 0);
 }
 
+.edit {
+  padding: 8px;
+}
+
+#save,
+#discard {
+  font-size: 0.9rem;
+  padding: 7px 20px;
+}
+#save {
+  background-color: #444;
+  border: 1px solid #444;
+  cursor: pointer;
+  color: #eee;
+  margin-right: 10px;
+}
+#save:hover {
+  background-color: #eee;
+  color: #444;
+}
+#discard:hover {
+  background-color: inherit;
+  color: #bbb;
+  border-color: #bbb;
+}
+
 .post-btn {
   background-color: inherit;
   border-radius: 28px;
@@ -532,6 +586,20 @@ textarea {
   position: relative;
   top: 1px;
 }
+
+input[type="text"]:disabled {
+  background-color: #ddd;
+}
+textarea:disabled {
+  background-color: #ddd;
+}
+#post:disabled {
+  background-color: #ddd;
+  color: #777;
+  border-color: #ddd;
+  cursor: auto;
+}
+
 input:focus::placeholder {
   color: transparent;
 }
